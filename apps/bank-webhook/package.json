@@ -1,7 +1,6 @@
 {
-  "name": "@repo/store",
+  "name": "bank-webhook",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,10 +8,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
+  "description": "",
   "dependencies": {
-    "recoil": "^0.7.7"
-  },
-  "exports": {
-      "./useBalance": "./src/hooks/useBalance"
+    "@repo/db" : "*",
+    "@types/express": "^5.0.0",
+    "esbuild": "^0.24.2",
+    "express": "^4.21.2"
   }
 }

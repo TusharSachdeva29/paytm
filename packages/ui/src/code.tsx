@@ -1,9 +1,20 @@
-export function Code({
+import React from "react";
+
+export function Card({
+  title,
   children,
-  className,
 }: {
-  children: React.ReactNode;
-  className?: string;
+  title: string;
+  children?: React.ReactNode;
 }): JSX.Element {
-  return <code className={className}>{children}</code>;
+  return (
+    <div
+      className="border p-6 bg-white rounded-xl bg-[#ededed]"
+    >
+      <h1 className="text-xl border-b pb-2">
+        {title}
+      </h1>
+      <p>{children}</p>
+    </div>
+  );
 }

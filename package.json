@@ -22,6 +22,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "next-auth": "^4.24.11"
+    "next-auth": "^4.24.11",
+    "recoil": "^0.7.7"
   }
 }
