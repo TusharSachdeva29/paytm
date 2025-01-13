@@ -1,3 +1,4 @@
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -53,5 +54,3 @@ enum OnRampStatus {
   Failure
   Processing
 }
-// what seeding a database means to put some dummy data in the database
-
